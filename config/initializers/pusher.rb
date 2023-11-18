@@ -6,9 +6,9 @@ require 'pusher'
 # Pusher.cluster = 'ap2'
 # Pusher.logger = Rails.logger
 # Pusher.encrypted = true
-Pusher.app_id = '1702043'
-Pusher.key = 'b49dba2e217b5f7d267c'
-Pusher.secret = '6ece08e77ce8e0d83578'
-Pusher.cluster = 'ap2'
-Pusher.logger = Rails.logger
-Pusher.encrypted = true
+# Pusher.app_id = '1702043'
+# Pusher.key = 'b49dba2e217b5f7d267c'
+# Pusher.secret = '6ece08e77ce8e0d83578'
+# Pusher.cluster = 'ap2'
+# Pusher.logger = Rails.logger
+# Pusher.encrypted = true
