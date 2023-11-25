@@ -18,9 +18,6 @@ class ConversationsController < ApplicationController
             render json: {conversation_id: @conversation.first.id}
         else
             @conversation = Conversation.create(user_1: @current_user.id,user_2: params[:receiver])
-            Pusher.trigger('currentConversation',"message:new",{
-                message: @conversation.content
-            })
             render json: {conversation_id: @conversation.id},status: :created
         end
     end

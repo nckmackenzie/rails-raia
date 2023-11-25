@@ -11,10 +11,6 @@ class DiscussionChatsController < ApplicationController
 
     def create
         @chat = DiscussionChat.create!(chat_params)
-        Pusher.trigger('discussion-channel', 'discussion-chat', {
-          message: @chat.message,
-          id: @chat.id
-        })
         render json: {message: "Success"}
         # discussion_chat = DiscussionChat.new(chat_params)
         # if discussion_chat.save!
